@@ -161,7 +161,7 @@ if menu_id == "Predictive Model":
     # Display the styled table
     style_tags = "".join(f"{style['selector']}{{{';'.join([f'{prop[0]}:{prop[1]}' for prop in style['props']])}}}" for style in styles)
     st.markdown(f'<style>{style_tags}</style>', unsafe_allow_html=True)
-    st.table(d.style.hide_index())
+    st.table(d.style.hide())
 
     if st.checkbox('Show data sample'):
         st.subheader('Raw data')
