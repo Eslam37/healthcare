@@ -24,8 +24,7 @@ st.set_page_config(
 #Creating Navigation bar
 menu_data = [
     {'label': "Problem Analysis", 'icon': '🔍'},
-    {'label': 'Predictive Model', 'icon': '🧪'},
-    {'label': 'Recommendations', 'icon': '📋'}
+    {'label': 'Predictive Model', 'icon': '🧪'}
 ]
 menu_id = hc.nav_bar(menu_definition=menu_data, sticky_mode='sticky', override_theme={ 'menu_background': '#3A9BCD', 'option_active': 'white'}
 )
